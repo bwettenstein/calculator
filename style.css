@@ -1,6 +1,5 @@
 body{
     background-color: #2D3142;
-
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 button{
@@ -10,9 +9,9 @@ button{
 }
 .calc-container{
     margin: auto;
-    border-style: double;
-    border-color: #FFFFFF;
-    border-radius: 20%;
+    border-style: solid;
+    border-color: #2D3142;
+    border-radius: 10%;
     background-color: #4F5D75;
     width: 480px;
     height: 550px;
@@ -20,13 +19,12 @@ button{
     padding-right: 5%;
 }
 .output {
-    border-style: double;
+    border-style: solid;
     border-radius: 10%;
-    border-color: #FFFFFF;
+    border-color: #2D3142;
     background-color: #BFC0C0;
     margin: 50px;
-    height: 10%;
-    width: 80%;
+    height: 13%;
 }
 .upper-buttons {
     display: flex;
@@ -41,7 +39,7 @@ button{
 .main-operators{
     display: flex;
 }
-.a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .root, .power, .del, .clear,
+.a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .root, .power, .delete, .clear,
 .division, .multiplication, .subtraction, .addition, .decimal, .equals
 {
     font-size: 16pt;
@@ -51,14 +49,24 @@ button{
     margin-bottom: 10px;
     margin-right: 15px;
 }
-.a:hover, .b:hover, .c:hover, .d:hover, .e:hover, .f:hover, .g:hover, .h:hover, .i:hover, .j:hover, .root:hover, .power:hover, .del:hover, .clear:hover,
+.a:hover, .b:hover, .c:hover, .d:hover, .e:hover, .f:hover, .g:hover, .h:hover, .i:hover, .j:hover, .root:hover, .power:hover, .delete:hover, .clear:hover,
 .division:hover, .multiplication:hover, .subtraction:hover, .addition:hover, .decimal:hover, .equals:hover
 {
     border-style: solid;
     border-color: black;
     border-width: 2pt;
 }
+.a:focus, .b:focus, .c:focus, .d:focus, .e:focus, .f:focus, .g:focus, .h:focus, .i:focus, .j:focus, .root:focus, .power:focus, .delete:focus, .clear:focus,
+.division:focus, .multiplication:focus, .subtraction:focus, .addition:focus, .decimal:focus, .equals:focus
+{
+    outline: none;
+}
+.clear, .delete {
+    background-color: #EF8354;
+    border-color: #EF8354;
+}
 .title {
     margin: auto;
     text-align: center;
+    color: #FFFFFF;
 }
