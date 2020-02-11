@@ -23,8 +23,14 @@ button{
     border-radius: 10%;
     border-color: #2D3142;
     background-color: #BFC0C0;
+    color: #2D3142;
     margin: 50px;
     height: 13%;
+}
+.output-display {
+    float: right;
+    font-size: 20pt;
+    margin-right: 10pt;
 }
 .upper-buttons {
     display: flex;
@@ -60,6 +66,8 @@ button{
 .division:focus, .multiplication:focus, .subtraction:focus, .addition:focus, .decimal:focus, .equals:focus
 {
     outline: none;
+    background-color: #2D3142;
+    color: #FFFFFF;
 }
 .clear, .delete {
     background-color: #EF8354;
