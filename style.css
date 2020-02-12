@@ -45,8 +45,8 @@ button{
 .main-operators{
     display: flex;
 }
-.a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .root, .power, .delete, .clear,
-.division, .multiplication, .subtraction, .addition, .decimal, .equals
+#a, #b, #c, #d, #e, #f, #g, #h, #i, #j, #root, #power, #delete, #clear,
+#division, #multiplication, #subtraction, #addition, #decimal, #equals
 {
     font-size: 16pt;
     text-align: center;
@@ -55,25 +55,25 @@ button{
     margin-bottom: 10px;
     margin-right: 15px;
 }
-.a:hover, .b:hover, .c:hover, .d:hover, .e:hover, .f:hover, .g:hover, .h:hover, .i:hover, .j:hover, .root:hover, .power:hover, .delete:hover, .clear:hover,
-.division:hover, .multiplication:hover, .subtraction:hover, .addition:hover, .decimal:hover, .equals:hover
+#a:hover, #b:hover, #c:hover, #d:hover, #e:hover, #f:hover, #g:hover, #h:hover, #i:hover, #j:hover, #root:hover, #power:hover, #delete:hover, #clear:hover,
+#division:hover, #multiplication:hover, #subtraction:hover, #addition:hover, #decimal:hover, #equals:hover
 {
     border-style: solid;
     border-color: black;
     border-width: 2pt;
 }
-.a:focus, .b:focus, .c:focus, .d:focus, .e:focus, .f:focus, .g:focus, .h:focus, .i:focus, .j:focus, .root:focus, .power:focus, .delete:focus, .clear:focus,
-.division:focus, .multiplication:focus, .subtraction:focus, .addition:focus, .decimal:focus, .equals:focus
+#a:focus, #b:focus, #c:focus, #d:focus, #e:focus, #f:focus, #g:focus, #h:focus, #i:focus, #j:focus, #root:focus, #power:focus, #delete:focus, #clear:focus,
+#division:focus, #multiplication:focus, #subtraction:focus, #addition:focus, #decimal:focus, #equals:focus
 {
     outline: none;
     background-color: #2D3142;
     color: #FFFFFF;
 }
-.clear, .delete {
+#clear, #delete {
     background-color: #EF8354;
     border-color: #EF8354;
 }
-.title {
+#title {
     margin: auto;
     text-align: center;
     color: #FFFFFF;
