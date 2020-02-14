@@ -7,7 +7,12 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #4F5D75;
+    background-color: #0077B6;
+}
+
+.title h1 {
+    text-align: center;
+    font-size: 25pt;
 }
 
 .calc-container{
@@ -17,6 +22,8 @@ body {
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    /* When you add square roots and exponents use the code below 
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px); */
 }
 
 .calc-container > button {
@@ -24,20 +31,39 @@ body {
     outline: none;
     font-size: 20pt;
     border: 1px solid;
-    background: #BFC0C0;
+    background: #90E0EF;
     opacity: .75;
 }
 
 .calc-container > button:hover {
-    background-color: white;
+    background-color: #CAF0F8;
     opacity: .90;
 }
 
-.clear{
+.clear, .equals{
     grid-column: span 2;
 }
 
-.equals {
-    grid-column: span 3;
+.output {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: 10px;
+    grid-column: 1 / -1;
+    background-color: #03045E;
+    opacity: .85;
 }
 
+.output .previous-output {
+    color: #CAF0F8;
+    opacity: .80;
+    font-size: 18pt;
+}
+
+.output .current-output {
+    color: #CAF0F8;
+    font-size: 18pt;
+}
