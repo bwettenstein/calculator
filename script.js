@@ -1,30 +1,44 @@
-let outputMessage = document.querySelector('.output-display');
-let numbersButton = document.querySelector('.numbers-container');
-let clear = document.querySelector('.clear')
-clear.addEventListener('click', () => output.textContent = "");
-const defaultMessage = 0;
-let previousNum = defaultMessage;
-let currentNum = defaultMessage;
-
-outputMessage.textContent = defaultMessage;
-
-numbersButton.addEventListener('click', e => {
-    if(e.target.matches('button')) {
-        console.log(this.id)
+class Calculator {
+    constructor(previousOutputText, currentOutputText) {
+        this.previousOutputText = previousOutputText;
+        this.currentOutputText = currentOutputText;
     }
-})
 
-let add = (num1, num2) => {
-    a+b;
-}
-let subtract = (num1, num2) => {
-    num1 - num2;
+    clear() {
+
+    }
+
+    delete() {
+
+    }
+
+    displayNumText(number) {
+
+    }
+
+    chooseOperation(operation) {
+
+    }
+
+    calculate() {
+
+    }
+
+    updateDisplay() {
+        
+    }
 }
 
-function printValue() {
-    console.log(this.id);
-}
 
-// HAVE A FUNCTION CALL OTHER FUNCTIONS BASED ON THE CLASS NAME
+const numberButtons = document.querySelectorAll('[data-number]');
+const operatorButtons = document.querySelectorAll('[data-operation]');
+const equalsButton = document.querySelector('[data-equals]');
+const deleteButton = document.querySelector('[data-delete]');
+const clearButton = document.querySelector('[data-clear]');
+const previousOutputText = document.querySelector('[data-previous-output]');
+const currentOutputText = document.querySelector('[data-current-output]');
+
+
+
 
 
