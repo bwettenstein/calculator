@@ -44,12 +44,14 @@ class Calculator {
             case '-':
                 computation = prev - current;
                 break;
-            case 'x':
+            case '*':
                 computation = prev * current;
                 break;
             case '÷':
                 computation = prev / current;
                 break;
+            case '.':
+               
             default:
                 return;
         }
@@ -58,9 +60,32 @@ class Calculator {
         this.previousOutput = '';
     }
 
+    // Formats the display with commas and decimals (if applicable)
+    getDisplayNumber(number) {
+        const stringNumber = number.toString()
+        const integerDigits = parseFloat(stringNumber.split('.')[0])
+        const decimalDigits = stringNumber.split('.')[1]
+        let integerDisplay
+        if (isNaN(integerDigits)) {
+          integerDisplay = ''
+        } else {
+          integerDisplay = integerDigits.toLocaleString('en', { maximumFractionDigits: 0 })
+        }
+        if (decimalDigits != null) {
+          return `${integerDisplay}.${decimalDigits}`;
+        } else {
+          return integerDisplay
+        }
+      }
+
     updateDisplay() {
-        this.currentOutputText.innerText = this.currentOutput;
-        this.previousOutputText.innerText = this.previousOutput;
+        this.currentOutputText.innerText = this.getDisplayNumber(this.currentOutput);
+        if (this.operation != null) {
+            this.previousOutputText.innerText = 
+                this.getDisplayNumber(this.previousOutput) + this.operation;
+        } else {
+            this.previousOutputText.innerText = '';
+        }
     }
 }
 
